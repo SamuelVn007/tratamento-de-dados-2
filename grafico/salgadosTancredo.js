@@ -1,7 +1,7 @@
 import { pegarCSS } from "./comum.js"
 
 async function graficoTancredo(){
-    const url = 'https://raw.githubusercontent.com/SamuelVn007/TRATAMENTO-DE-DADOS-CONCERTADO/refs/heads/main/2024-3-D.S-tratamento-de-dados-main/tancredoSalgados.json'
+    const url = 'https://raw.githubusercontent.com/SamuelVn007/tratamento-de-dados-2/refs/heads/main/tancredoSalgados.json'
     const res = await fetch(url)
     const dados = await res.json()
     const salgadosVotados = dados.slice(1).map( salgados => salgados[1])
